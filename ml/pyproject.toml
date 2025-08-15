@@ -1,0 +1,35 @@
+[project]
+name = "sample-simple-ai-app-streamlit_ml-env"
+version = "0.1.0"
+description = "sample-simple-ai-app-streamlit (machine learning env)"
+authors = [
+    {name = "sakagami0615",email = "sakagami0615@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "torch (>=2.8.0,<3.0.0)",           # CPU版PyTorch
+    "torchvision (>=0.23.0,<0.24.0)",    # CPU版TorchVision
+    "ipykernel (>=6.30.1,<7.0.0)",
+    "matplotlib (>=3.10.5,<4.0.0)",
+    "streamlit (>=1.48.1,<2.0.0)",
+]
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.group.dev.dependencies]
+#torch = { version = "2.8.0+cu129", source = "torch-cu129" }             # GPU版PyTorch
+#torchvision = { version = "0.23.0+cu129", source = "torch-cu129" }      # GPU版TorchVision
+# TODO: 修正必要
+#torch = { version = "2.8.0+cu129" }             # GPU版PyTorch
+#torchvision = { version = "0.23.0+cu129" }      # GPU版TorchVision
+
+#[[tool.poetry.source]]
+#name = "torch-cu129"
+#url = "https://download.pytorch.org/whl/cu129"
+#priority = "explicit"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
