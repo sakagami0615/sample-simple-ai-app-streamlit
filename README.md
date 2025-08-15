@@ -26,7 +26,7 @@ poetry run python -m ipykernel install --user --name=ml-env --display-name "ml-e
 
 ### 実行方法(ML環境)
 
-`ml/training.ipynb` を実行することで学習が実施され、`ml/model/latest_train_model.pth` に学習済みモデルが保存される。  
+`ml/training.ipynb` を実行することで学習が実施され、`ml/model_param/latest_train_model.pth` に学習済みモデルが保存される。  
 現状のノートブックでは、FashionMNISTの画像分類を学習する処理が記載されている。  
 (コミットされている学習済みモデルは、このノートブックを実行して保存した学習済みモデルとなる)
 
